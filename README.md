@@ -3,7 +3,7 @@
 ## Overview of the Analysis
 The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. 
 
-The purpose of this project is to analyze Amazon reviews written by members of the Amazon Vine program and determine if there is any bias towards favorable reviews from Vine members.
+The purpose of this project is to analyze Amazon reviews written by members of the Amazon Vine program and determine if there is any bias towards positive reviews from Vine members.
 
 In this projects, I used the dataset from [amazon_reviews_us_Video_Games](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz). I used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, I used PySpark to determine if there is any bias toward favorable reviews from Vine members in the dataset.
 
@@ -18,5 +18,6 @@ In this projects, I used the dataset from [amazon_reviews_us_Video_Games](https:
 - There are 39% Vine reviews were 5 stars, and 51% non-Vine reviews were 5 stars.
 
 ## Summary
-state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+According to the results, there is a positivity bias for reviews in the Vine program since 39% of reviews in the Vine program were 5 stars whereas 51% of reviews in the non-Vine program were 5 stars. 
 
+Additional analysis could include statistical distribution such as mean, median, and mode for the 5-star reviews of Vine and non-Vine reviews.
